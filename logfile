@@ -1,3 +1,7 @@
   File "/home/pronoias/Dokumente/Projects/Programming/teahouse-fox-background/teahouse-fox-background.py", line 15
     expanded_wallpaper_folder = os.path.expanduser(wallpaper_path)
 TabError: inconsistent use of tabs and spaces in indentation
+Traceback (most recent call last):
+  File "/home/pronoias/Dokumente/Projects/Programming/teahouse-fox-background/teahouse-fox-background.py", line 6, in <module>
+    current_time = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'

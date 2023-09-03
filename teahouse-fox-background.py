@@ -3,7 +3,7 @@
 import os
 from datetime import datetime
 
-current_time = datetime.datetime.now()
+current_time = datetime.now()
 timestamp = current_time.strftime("%Y-%m-%d %H:%M:%S")
 
 def is_gnome_environment():
