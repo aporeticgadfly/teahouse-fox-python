@@ -7,11 +7,11 @@ current_time = datetime.datetime.now()
 timestamp = current_time.strftime("%Y-%m-%d %H:%M:%S")
 
 def is_gnome_environment():
-    desktop = os.environ.get('XDG_CURRENT_DESKTOP', '').lower()
-    return 'gnome' in desktop
+	desktop = os.environ.get('XDG_CURRENT_DESKTOP', '').lower()
+	return 'gnome' in desktop
 
 if is_gnome_environment():
-    wallpaper_path = "~/Dokumente/Projects/Programming/teahouse-fox-background/imgs"
+	wallpaper_path = "~/Dokumente/Projects/Programming/teahouse-fox-background/imgs"
 	expanded_wallpaper_folder = os.path.expanduser(wallpaper_path)
 	current_datetime = datetime.now()
 	current_hour = current_datetime.hour
@@ -25,5 +25,5 @@ if is_gnome_environment():
 	os.system(gsettings_scale_command)
 	os.system(gsettings_set_command)
 else:
-    print(f"[{timestamp}] GNOME is not the active desktop environment. GNOME is required for this script to work.")
+	print(f"[{timestamp}] GNOME is not the active desktop environment. GNOME is required for this script to work.")
 
