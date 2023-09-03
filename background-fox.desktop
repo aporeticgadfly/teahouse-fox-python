@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Background-Fox
+GenericName=Background-Fox
+Comment=Update the background fox on login
+Exec=~/Dokumente/Projects/Programming/teahouse-fox-background/teahouse-fox-background.py
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
